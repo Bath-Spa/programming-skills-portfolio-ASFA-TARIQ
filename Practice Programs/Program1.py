@@ -34,8 +34,6 @@ print('Enter the amount of '+
 my_str='one' ' two' ' three'
 print(my_str)
 
-print("this is text")
-
 #program sample 1
 #create string type variables
 name="python"
@@ -54,7 +52,7 @@ num2=6.3
 #add two numbers
 sum= num1+num2
 #Display the sum
-print('The sum of {0} and {1}is{2}',format(num1,num2.sum))
+print('The sum of {0} and {1} is{2}'.format(num1,num2,sum))
 
 #program sample 4
 #python program to calculate the square root
@@ -63,7 +61,39 @@ print('The sum of {0} and {1}is{2}',format(num1,num2.sum))
 # take the input from the user
 num=float(input('Enter a number:'))
 num_sqrt=num**0.5
-print('The square root of%0.3f is %0.3f'%(num,num_sqrt))
+print('The square root of %0.3f is %0.3f'%(num,num_sqrt))
  
 print('hello')
 print("bye")
+
+#program sample 5
+#Python program to assign a message to a variable 
+msg="Hello,This is assigning a message to a variable program"
+print(msg)
+
+#program sample 7
+#Phython code to determine escape character
+#string
+a="This\nis\tPhython language"
+print(a)
+
+#program sample 8
+#Python code to print number
+a=int(input("Enter your favorite number= ")) 
+print("My favorite number is ={0}".format(a))
+
+#program 7
+#python code using stripping
+#string
+a="\t   Asfa Tarq    \n"
+print(a)
+print(a.lstrip())
+print(a.rstrip())
+print(a.strip())
+
+#program sample 9
+#python code that calculstes how manycandies he can buy and how many dollatrs he will have left
+Candies_Bought=("Total candies bought are=")
+money_left="Total money that is left="
+print(Candies_Bought+str(int(20/2)))
+print(money_left+str(20%2))
