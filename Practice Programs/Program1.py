@@ -97,3 +97,4 @@ Candies_Bought=("Total candies bought are=")
 money_left="Total money that is left="
 print(Candies_Bought+str(int(20/2)))
 print(money_left+str(20%2))
+

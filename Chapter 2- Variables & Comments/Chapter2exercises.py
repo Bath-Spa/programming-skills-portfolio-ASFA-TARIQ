@@ -35,7 +35,7 @@ print(name.strip())
 #that message.
 #This is the solution
 Favorite_Number=7
-print("My favorite number is ",Favorite_Number) 
+print("My favorite number is ",Favorite_Number)
 
 
 # Exercise 5: USB Shopper 
