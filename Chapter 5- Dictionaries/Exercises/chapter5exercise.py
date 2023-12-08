@@ -44,8 +44,12 @@ programming_words={'if statement':'\"The if statement evaluates an expression, a
                    'reverse list':'\"reverse() function reverse the elements of the list.\"',
                    'Data structures':'\"Data structures are containers that organize and group data according to type.\"'
                  }
-for keys, values in programming_words.items():
+for key, value in programming_words.items():
     print(f"\n{key}:\n\t {value}")
+
+
+
+
 
 
 # Exercise 4: Rivers :
