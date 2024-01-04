@@ -1,7 +1,7 @@
 #Vending Machine program
-print("_______________________________________________________________________") 
-print("\033[1m       ***WELCOME TO SNACKS AND DRINKS VENDING MACHINE***\033[0m")
-print("_______________________________________________________________________") 
+print("__________________________________________________________________________________________________________________________________")  
+print("\033[1m                                  ***WELCOME TO SNACKS AND DRINKS VENDING MACHINE***\033[0m")
+print("__________________________________________________________________________________________________________________________________")  
 print("All items in this vending machine are exclusive of vat 5%")
 Chips= {
       'Doritos': 'Code A'  ,'Cheetos': 'Code B', 'Takis': 'Code C' ,'Lays forno': 'Code D',
@@ -82,7 +82,7 @@ Other_Drinks={
                 'Code 11' : {'Name':'Ice tea','Price': '5.00 ','Stock':'8'},
                 'Code 12' : {'Name':'Cold coffee','Price': '6.00 ','Stock':'8'},
             }
-print("_______________________________________________________________________") 
+print("__________________________________________________________________________________________________________________________________")   
 # ask user for input
 while True:
     Product_Code = input("Enter the product code whose details you want to know Enter Done if you are one with checking the product detail and want to order\n this will show the products name, code, price and available stock (Note Please enter the exact code): ")
@@ -94,42 +94,42 @@ while True:
         print(f"Product Name: {Chips[Product_Code]['Name']}")
         print(f"Product Price: AED  {Chips[Product_Code]['Price']}")
         print(f"Product Stock: {Chips[Product_Code]['Stock']}")
-        print("_______________________________________________________________________") 
+        print("__________________________________________________________________________________________________________________________________")  
 
     elif Product_Code in Chocolates:
 # display Chocolate details
         print(f"Product Name: {Chocolates[Product_Code]['Name']}")
         print(f"Product Price: AED {Chocolates[Product_Code]['Price']}")
         print(f"Product Stock: {Chocolates[Product_Code]['Stock']}") 
-        print("_______________________________________________________________________")  
+        print("__________________________________________________________________________________________________________________________________")     
 
     elif Product_Code in Cookies:
 # display Cookies details
         print(f"Product Name: {Cookies[Product_Code]['Name']}")
         print(f"Product Price: AED {Cookies[Product_Code]['Price']}")
         print(f"Product Stock: {Cookies[Product_Code]['Stock']}") 
-        print("_______________________________________________________________________") 
+        print("__________________________________________________________________________________________________________________________________")  
 
     elif Product_Code in Juices:
 # display Juices details
         print(f"Product Name: {Juices[Product_Code]['Name']}")
         print(f"Product Price{Juices[Product_Code]['Price']}")
         print(f"Product Stock: {Juices[Product_Code]['Stock']}") 
-        print("_______________________________________________________________________") 
+        print("__________________________________________________________________________________________________________________________________")  
 
     elif Product_Code in Cold_Drinks:
 # display Cold Drinks details
         print(f"Product Name: {Cold_Drinks[Product_Code]['Name']}")
         print(f"Product Price: AED {Cold_Drinks[Product_Code]['Price']}")
         print(f"Product Stock: {Cold_Drinks[Product_Code]['Stock']}") 
-        print("_______________________________________________________________________")  
+        print("__________________________________________________________________________________________________________________________________")  
 
     elif Product_Code in Other_Drinks:
 # display Other Drinks details
         print(f"Product Name: {Other_Drinks[Product_Code]['Name']}")
         print(f"Product Price: AED {Other_Drinks[Product_Code]['Price']}")
         print(f"Product Stock: {Other_Drinks[Product_Code]['Stock']}") 
-        print("_______________________________________________________________________") 
+        print("__________________________________________________________________________________________________________________________________")   
 
     else:
         print("Product code not found.")
@@ -164,8 +164,7 @@ while True:
             Total_Amount_With_Vat = Total_Amount + (Total_Amount * 0.05)
             print(f"Your total purchase for {Chips[Product_Code]['Name']} inclusive of vat 5% will be {Total_Amount_With_Vat}.")
             Grand_Total += Total_Amount_With_Vat
-            print("Purchased successfuly!")
-            print("_______________________________________________________________________") 
+            print("__________________________________________________________________________________________________________________________________")  
 #Appending Dispensed_Items
             Dispensed_Items.append({
                 'Name': Chips[Product_Code]['Name'],
@@ -191,8 +190,7 @@ while True:
             Total_Amount_With_Vat = Total_Amount + (Total_Amount * 0.05)
             print(f"Your total purchase for {Chocolates[Product_Code]['Name']} inclusive of vat 5% will be {Total_Amount_With_Vat}. ")
             Grand_Total += Total_Amount_With_Vat
-            print("Purchased successful!y")
-            print("_______________________________________________________________________") 
+            print("__________________________________________________________________________________________________________________________________")   
 #Appending Dispensed_Items            
             Dispensed_Items.append({
                 'Name': Chocolates[Product_Code]['Name'],
@@ -218,8 +216,7 @@ while True:
             Total_Amount_With_Vat = Total_Amount + (Total_Amount * 0.05)
             print(f"Your total purchase for {Cookies[Product_Code]['Name']} inclusive of vat 5% will be {Total_Amount_With_Vat}. ")
             Grand_Total += Total_Amount_With_Vat
-            print("Purchased successful!y")
-            print("_______________________________________________________________________") 
+            print("__________________________________________________________________________________________________________________________________")  
 #Appending Dispensed_Items           
             Dispensed_Items.append({
                 'Name': Cookies[Product_Code]['Name'],
@@ -244,8 +241,7 @@ while True:
             Total_Amount_With_Vat = Total_Amount + (Total_Amount * 0.05)
             print(f"Your total purchase for {Juices[Product_Code]['Name']} inclusive of vat 5% will be {Total_Amount_With_Vat}. ")
             Grand_Total += Total_Amount_With_Vat
-            print("Purchased successfuly!")
-            print("_______________________________________________________________________") 
+            print("__________________________________________________________________________________________________________________________________")   
 #Appending Dispensed_Items            
             Dispensed_Items.append({
                 'Name': Juices[Product_Code]['Name'],
@@ -270,8 +266,7 @@ while True:
             Total_Amount_With_Vat = Total_Amount + (Total_Amount * 0.05)
             print(f"Your total purchase for {Cold_Drinks[Product_Code]['Name']} inclusive of vat 5% will be {Total_Amount_With_Vat}. ")
             Grand_Total += Total_Amount_With_Vat
-            print("Purchased successfuly!")
-            print("_______________________________________________________________________") 
+            print("__________________________________________________________________________________________________________________________________")   
 #Appending Dispensed_Items            
             Dispensed_Items.append({
                 'Name': Cold_Drinks[Product_Code]['Name'],
@@ -296,8 +291,7 @@ while True:
             Total_Amount_With_Vat = Total_Amount + (Total_Amount * 0.05)
             print(f"Your total purchase for {Other_Drinks[Product_Code]['Name']} inclusive of vat 5% will be {Total_Amount_With_Vat}. ")
             Grand_Total += Total_Amount_With_Vat
-            print("Purchased successfuly!")
-            print("_______________________________________________________________________") 
+            print("__________________________________________________________________________________________________________________________________")  
 #Appending Dispensed_Items           
             Dispensed_Items.append({
                 'Name': Other_Drinks[Product_Code]['Name'],
@@ -312,13 +306,13 @@ print(f"\nYour grand total with vat 5% for all products is: {Grand_Total}")
 
 #Displays users types of cards that are accepted in the vending machine    
 Card_Accepted=["Visa Card","Master Card","American Express"]
-print("_______________________________________________________________________") 
+print("__________________________________________________________________________________________________________________________________")  
 print("\n\033[1mCard Accepted\033[0m")
-print("=======================================================================") 
+print("==================================================================================================================================") 
 print (Card_Accepted[0])
 print (Card_Accepted[1])
 print (Card_Accepted[2]) 
-print("=======================================================================") 
+print("==================================================================================================================================") 
 #Ask the user how would they like to pay 
 print("\nHow would You  like to pay")
 print("By Cash enter \033[1m\"Cash\"\033[0m")  
@@ -366,11 +360,11 @@ elif Payment_Method == 'Card':
 else :
     print("\nYou have canceled the order")
 
-print("_______________________________________________________________________") 
+print("__________________________________________________________________________________________________________________________________")  
 print("\n\033[1mitems dispensed.\033[0m")
-print("=======================================================================") 
+print("==================================================================================================================================")  
 # Displaying dispensed items
 display_dispensed_products(Dispensed_Items)
-print("=======================================================================") 
+print("==================================================================================================================================") 
 print("\n\033[1mThank You For Using Our Vending Machine.\033[0m")  
 print("\n\033[1mPlease come again.\033[0m")   
