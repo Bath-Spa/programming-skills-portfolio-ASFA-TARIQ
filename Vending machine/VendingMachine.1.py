@@ -327,10 +327,19 @@ if Payment_Method == 'Cash':
             print(f"The amount You have entered is less than the amount required. ")
             Amount_Inserted = float(input("\nInsert the cash: "))
             Amount_Paid += Amount_Inserted
+
         if Amount_Paid > Grand_Total:
             Change = Amount_Paid - Grand_Total
+
         else:
-            print("Payment successfully made")  
+            print("Payment successfully made") 
+            print("__________________________________________________________________________________________________________________________________")  
+            print("\n\033[1mitems dispensed.\033[0m")
+            print("==================================================================================================================================")  
+            # Displaying dispensed items
+            display_dispensed_products(Dispensed_Items)
+            print("==================================================================================================================================") 
+ 
                        
 #If the amount inserted is more than the amount required             
         while Amount_Paid > Grand_Total:     
@@ -338,33 +347,60 @@ if Payment_Method == 'Cash':
             Excess_Amount = Amount_Paid-Grand_Total
             print("\nHere is your change: {Excess_Amount} AED".format(Excess_Amount=Excess_Amount))
             print("Payment Sucessfully made")
+            print("__________________________________________________________________________________________________________________________________")  
+            print("\n\033[1mitems dispensed.\033[0m")
+            print("==================================================================================================================================")  
+            # Displaying dispensed items
+            display_dispensed_products(Dispensed_Items)
+            print("==================================================================================================================================") 
             break
 #If the amount is just perfect            
         while Amount_Paid == Grand_Total:   
             print("\n You have inserted the exact amount.")
             print("Payment Sucessfully made")
+            print("__________________________________________________________________________________________________________________________________")  
+            print("\n\033[1mitems dispensed.\033[0m")
+            print("==================================================================================================================================")  
+            # Displaying dispensed items
+            display_dispensed_products(Dispensed_Items)
+            print("==================================================================================================================================") 
             break
 #If user chooses card            
 elif Payment_Method == 'Card':
     Swap_Card=input("\nSwap your card: ")
     if Swap_Card == 'Visa Card':    #Chooses Visa Card
             print("\nYou have swapped Visa card.")
+            print("__________________________________________________________________________________________________________________________________")  
+            print("\n\033[1mitems dispensed.\033[0m")
+            print("==================================================================================================================================")  
+            # Displaying dispensed items
+            display_dispensed_products(Dispensed_Items)
+            print("==================================================================================================================================") 
+
     elif Swap_Card == 'Master Card':    #Chooses Master Card 
             print("\nYou have swapped Master Card.")
+            print("__________________________________________________________________________________________________________________________________")  
+            print("\n\033[1mitems dispensed.\033[0m")
+            print("==================================================================================================================================")  
+            # Displaying dispensed items
+            display_dispensed_products(Dispensed_Items)
+            print("==================================================================================================================================") 
+
     elif Swap_Card == 'American Express':   #Chooses American Express
             print("\nYou have swapped American Express.")
+            print("__________________________________________________________________________________________________________________________________")  
+            print("\n\033[1mitems dispensed.\033[0m")
+            print("==================================================================================================================================")  
+            # Displaying dispensed items
+            display_dispensed_products(Dispensed_Items)
+            print("==================================================================================================================================") 
+
 #If the card the user have swapped does not match any of the card listed above             
     else:
             print("\nThe card you have swapped is not accepted in our vending machine.")  
 #If the user cancels the order            
 else :
-    print("\nYou have canceled the order")
+    print("\nYou have canceled your order")
 
-print("__________________________________________________________________________________________________________________________________")  
-print("\n\033[1mitems dispensed.\033[0m")
-print("==================================================================================================================================")  
-# Displaying dispensed items
-display_dispensed_products(Dispensed_Items)
-print("==================================================================================================================================") 
 print("\n\033[1mThank You For Using Our Vending Machine.\033[0m")  
 print("\n\033[1mPlease come again.\033[0m")   
